@@ -1,0 +1,262 @@
+/* STYLES THAT ARE UNIVERSAL FOR WHOLE SITE */
+
+* { 
+	margin:0;
+	padding:0;
+} 
+
+a {text-decoration:none}
+
+a img {
+	border:none;
+}
+
+
+html {
+		margin:0;
+		padding:0;
+		border:0;
+}
+
+body {
+	margin:0 auto;
+	background-color:none;
+}
+
+p {
+	font-family:"Helvetica";
+	font-size:14px;
+	margin:0px 0px 5px 0px;
+}
+
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "ProximaNova-Bold",Helvetica,Arial,sans-serif;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+
+.container {
+	display:block;
+	min-width: 1024px;
+	max-width: 1024px;
+	margin: 0px auto;
+	background-color:none;	
+	width:expression(document.body.clientWidth < 782? "780px" : document.body.clientWidth > 1262? "1260px" : "auto");
+}
+
+.debug {
+	font-family:"Helvetica";
+	color:black;
+	float:left;
+	width:100%;
+	margin:40px 0px 20px 0px;
+	background-color:WhiteSmoke;
+	border:1px solid #D0D0D0;
+	text-align:center;
+	opacity:0.5;
+}
+
+.alert {
+	float:left;
+	width:100%;
+	padding:10px;
+	border:1px solid #D11919;
+	background-color:#FF9696;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FF9696), to(#FF8484));
+	background: -moz-linear-gradient(top, #FF9696,  #FF8484);
+	text-align:center;
+	margin:10px 0px 10px 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-family:"Helvetica";
+}
+
+
+/* STYLES JUST FOR THINGS IN PAGES CONTROLLER */
+
+
+/* SPLASH PAGE */
+
+#img_bg{
+	min-height: 100%;
+	min-width: 1024px;
+
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+
+  opacity:0.9;
+  filter:alpha(opacity=90);/*  For IE8 and earlier */
+}
+
+#landing_img_container{
+  width: 100%;
+  position: fixed;
+  z-index: -10;
+}
+
+
+.topbar {
+	background-color:#000000;
+	opacity:0.8;
+	height:60px;
+}
+
+.topbar a {
+	float:left;
+	color:white;
+	font-size:18px;
+	font-family: "Helvetica";
+	font-weight:bold;
+	margin:20px 25px 25px 25px;
+}
+
+.topbar a:hover {
+	opacity:0.8;
+}
+
+.splash_container {
+	display:block;
+	min-width: 800px;
+	max-width: 1280px;
+	margin: 0px auto;
+	background-color:none;	
+	width:expression(document.body.clientWidth < 782? "780px" : document.body.clientWidth > 1262? "1260px" : "auto");
+}
+
+.logo_box {
+	border:1px solid none;
+	margin:100px 0px 0px 0px;
+}
+
+.logo {
+	margin:20px 0px 0px 40px;
+}
+
+.splash_tagline {
+	margin:0px 0px 0px 20px;
+	color:white;
+	font-size:75px;
+	text-align:left;
+}
+
+.splash_tagline_description {
+	color:white;
+	font-family:"Helvetica";
+	font-size:20px;
+	font-weight:none;
+	margin:5px 0px 0px 55px;
+	color:white;
+	text-align:center;
+	width:400px;
+	font-weight:none;
+}
+
+.invitation_button {
+	margin:40px 0px 0px 100px;
+	width:275px;
+	border:1px solid #0099FF;
+	padding:20px;
+	text-align:center;
+	font-family:"Helvetica";
+	color:white;
+	font-size:22px;
+	background-color:#0099FF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	opacity:0.8;			
+}
+
+.invitation_button:hover {
+	border:1px solid white;
+	cursor:pointer;
+}
+
+.invitation_form {
+	display:none;
+	margin:40px 0px 0px 50px;
+}
+
+.invite_code_field {
+	float:left;
+	width:275px;
+	padding:20px 20px 20px 5px;
+	border:1px solid white;
+	font-size:16px;
+	color:#333;
+}
+
+.invite_code_button {
+	float:left;
+	margin:0px 0px 0px 10px;
+	padding:15px;
+	border:1px solid #0099FF;
+	font-family:"Helvetica";
+	color:white;
+	font-weight:none;
+	font-size:24px;
+	background-color:#0099FF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;			
+}
+
+.invite_code_button:hover {
+	border:1px solid #E8E8E8;
+	cursor:pointer;
+}
+
+.failure {
+	margin:5px 0px 0px 100px;
+	width:275px;
+	border:1px solid white;
+	padding:20px;
+	text-align:center;
+	font-family:"Helvetica";
+	color:#D63333;
+	font-size:22px;
+	background-color:white;
+}
+
+.success {
+	margin:5px 0px 0px 100px;
+	width:275px;
+	border:1px solid white;
+	padding:20px;
+	text-align:center;
+	font-family:"Helvetica";
+	color:#0052CC;
+	font-size:22px;
+	background-color:white;
+	opacity:0.7;
+}
+
+.home_tagline {
+	width:300px;
+	text-align:center;
+	margin:10px 0px 10px 10px;
+	font-size:16px;
+	color:white;
+	font-weight:bold;
+}
+
