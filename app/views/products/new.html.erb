@@ -1,0 +1,41 @@
+<%= render 'pages/mainbar' %>
+
+<div class="container">
+
+	<div class="new_product_box">
+
+	<%= form_for @product, :html => { :multipart => true }  do |f| %>
+
+		<%= f.label :brand %>
+		<%= f.text_field :brand %>
+
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+
+		<%= f.label :price %>
+		<%= f.text_field :price %>		
+
+		<%= f.label :description %>
+		<%= f.text_area :description %>		
+
+		<%= f.label :link %>
+		<%= f.text_field :link %>		
+
+		<%= f.label :store %>
+		<%= f.text_field :store %>		
+
+  <%= f.file_field :photo %>
+
+		<%= f.label :frontpage %>
+		<%= f.check_box :frontpage %>		
+
+		<%= f.label :expired %>
+		<%= f.check_box :expired %>		
+
+		<%= f.submit %>
+
+	<% end %>
+
+	</div>
+
+</div>

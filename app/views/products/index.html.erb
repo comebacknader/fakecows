@@ -1,0 +1,10 @@
+<%= render 'pages/mainbar' %>
+
+
+<div class="container">
+	<% @products.each do |product| %>
+	<div class="each_product">
+		<p> <%= product.brand %> </p>
+	</div>
+	<% end %>
+</div>
