@@ -6,9 +6,7 @@ class Product < ActiveRecord::Base
               :bucket => 'productphotos.fakecow.com',
               :s3_credentials => {
               :access_key_id => ENV['S3_KEY_FAKECOW'],
-              :secret_access_key => ENV['S3_SECRET_FAKECOW'],
-              :url  => "/assets/products/:id/:style/:basename.:extension",
-              :path => ":rails_root/public/assets/products/:id/:style/:basename.:extension"              
+              :secret_access_key => ENV['S3_SECRET_FAKECOW'],             
             }
 
 end
