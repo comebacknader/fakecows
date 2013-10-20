@@ -52,11 +52,41 @@
 
 /* PRODUCT INDEX */
 
+.all_products {
+	float:left;
+	margin:20px 0px 0px 0px;
+}
+
 .each_product {
 	float:left;
 	width:300px;
-	height:300px;
+	border:1px solid none;
+}
+
+.each_product_image {
+	float:left;
 	border:1px solid #D0D0D0;
-	padding:10px;
+}
+
+.each_product_image:hover {
+	opacity:0.8;
+}
+
+.each_product_info {
+	float:left;
+	width:290px;
+	border:1px solid #D0D0D0;
+	padding:5px;
+}
+
+/* PRODUCT SHOW */
+
+.show_product_box {
+	float:left;
+	width:100%;
+	border:1px solid #D0D0D0;
+	padding:5px;
+	font-family:"Helvetica";
+	margin:20px 0px 0px 0px;
 }
 
