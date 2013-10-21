@@ -3,7 +3,23 @@
 <div class="container">
 
 	<div class="show_product_box">
-			<%= @product.brand %> <%= @product.title %>
+			
+			<%= image_tag(@product.photo(:medium), class:"show_product_image") %>
+			
+			<div class="show_product_info">
+				<p class="show_product_header"> <%= @product.brand %> </p>
+				<p  class="show_product_title"> <%= @product.title %> </p>
+				<p class="show_product_price"> <%= @product.price %> </p>
+				<p  class="show_product_description"> <%= @product.description %> </p>
+
+			<%= link_to @product.link, :target => "_blank" do %>
+				<div class="show_product_link">
+					Check It Out
+				</div>
+			<% end %>
+
+			</div>
+
 	</div>
 
 </div>
