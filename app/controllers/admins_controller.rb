@@ -1,5 +1,4 @@
 class AdminsController < ApplicationController
-  skip_before_filter :authorize
 
   def index
   	@admins = Admin.all
