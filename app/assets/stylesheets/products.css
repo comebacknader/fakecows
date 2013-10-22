@@ -5,10 +5,10 @@
 
 .new_product_box {
 	float:left;
-	width:100%;
+	width:420px;
 	border:1px solid #D0D0D0;
 	padding:10px;
-	margin:20px 0px 0px 0px;
+	margin:20px 0px 20px 270px;
 	font-family:"Helvetica";
 }
 
