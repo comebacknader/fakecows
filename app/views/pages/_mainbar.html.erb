@@ -1,9 +1,16 @@
 <div class="container">
 	<div class="main_bar">
+
 		<%= link_to root_path do %>
 				<%= image_tag("LOGO.png", class:"main_logo") %>
 		<% end %>
-				<p class="main_tagline"> all products made with faux leather </p>
+ 	  <% if current_admin %>
+ 	   <div class="login_info">
+   		 <%= link_to "LOG OUT", log_out_path %>
+   	   </div>
+  	  <% else %>
+		<p class="main_tagline"> all products made with faux leather </p>
+	  <% end %>
 	</div>
 	<div class="nav_bar">
 		<p>MEN</p>

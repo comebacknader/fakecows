@@ -1,0 +1,49 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.new_admin_box {
+	float:left;
+	border:1px solid #D0D0D0;
+	padding:10px;
+	margin:20px 0px 0px 260px;
+	font-family:"Helvetica";
+}
+
+.new_admin_box form input {
+	display:block;
+	width:400px;
+	padding:5px;
+	font-size:14px;
+}
+
+.new_admin_box form textarea {
+	display:block;
+	width:400px;
+	height:100px;
+	padding:5px;
+	font-size:14px;
+}
+
+.new_admin_box form label {
+	display:block;
+	padding:5px;
+	margin:10px 0px 0px 0px;
+}
+
+.new_admin_box form input[type=checkbox] {
+	float:left;
+	margin:0px 0px 0px 0px;
+}
+
+.new_admin_box form input[type=submit] {
+	margin:40px 0px 0px 0px;
+	width:400px;
+	border:1px solid #D0D0D0;
+	background-color:whitesmoke;
+}
+
+.new_admin_box form input[type=submit]:hover {
+	background-color:#D0D0D0;
+}

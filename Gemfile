@@ -14,7 +14,7 @@ group :doc do
 end
 
 gem "pg"
-gem 'bcrypt-ruby'
+gem 'bcrypt-ruby', '~> 3.0.0'
 gem "jquery-rails"
 gem 'aws-s3'
 gem 'aws-sdk'

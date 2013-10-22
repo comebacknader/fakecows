@@ -40,7 +40,7 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
-    bcrypt-ruby (3.1.2)
+    bcrypt-ruby (3.0.1)
     builder (3.1.4)
     celluloid (0.15.2)
       timers (~> 1.1.0)
@@ -219,7 +219,7 @@ DEPENDENCIES
   annotate (~> 2.5.0.pre1)
   aws-s3
   aws-sdk
-  bcrypt-ruby
+  bcrypt-ruby (~> 3.0.0)
   faker (= 0.3.1)
   friendly_id (~> 4.0.1)
   guard-rspec (= 0.5.5)

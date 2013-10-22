@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="main_bar">
+		<%= link_to root_path do %>
+				<%= image_tag("LOGO.png", class:"main_logo") %>
+		<% end %>
+	</div>
+</div>
+
+<div class="container">
+
+	<div class="new_admin_box">
+
+	<%= form_tag adminsessions_path do %>
+
+		<%= label_tag :email %>
+		<%= text_field_tag :email %>
+
+		<%= label_tag :password %>
+		<%= password_field_tag :password %>
+
+		<%= submit_tag %>
+
+	<% end %>
+
+	</div>
+
+</div>

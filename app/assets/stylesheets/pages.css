@@ -137,6 +137,14 @@ h2 {
 	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
 }
 
+.login_info {
+	float:left;
+	font-size:12px;
+	width:300px;
+	margin:50px 0px 0px 0px;
+	font-family:"Helvetica";
+}
+
 .nav_bar {
 	float:left;
 	width:96%;
