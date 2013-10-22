@@ -1,13 +1,13 @@
 <%= render 'pages/mainbar' %>
 
 
-<div class="container">
-  <div class="all_products">
+<div id="container">
+  <div id="all_products">
 	<% @products.each do |product| %>
 	<%= link_to product do %>
 	<div class="each_product">
-	 <div class="each_product_image">
-		<%= image_tag(product.photo(:medium), class: "each_product_img") %>
+	 <div classs="each_product_image">
+		<%= image_tag(product.photo, class: "each_product_img") %>
 	 </div>
 	<% end %> 
 	 <div class="each_product_info">
@@ -16,5 +16,5 @@
 	 </div>	 	
 	</div>
 	<% end %>	
-	</div>
+ </div>
 </div>

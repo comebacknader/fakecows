@@ -57,6 +57,15 @@ h2 {
 	width:expression(document.body.clientWidth < 782? "780px" : document.body.clientWidth > 1262? "1260px" : "auto");
 }
 
+#container {
+	display:block;
+	min-width: 1024px;
+	max-width: 1024px;
+	margin: 0px auto;
+	background-color:none;	
+	width:expression(document.body.clientWidth < 782? "780px" : document.body.clientWidth > 1262? "1260px" : "auto");
+}
+
 .debug {
 	font-family:"Helvetica";
 	color:black;
