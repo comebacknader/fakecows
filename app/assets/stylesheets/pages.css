@@ -138,11 +138,17 @@ h2 {
 }
 
 .login_info {
+	float:right;
+	font-size:12px;
+	width:200px;
+	margin:45px 0px 0px 0px;
+	font-family:"Helvetica";
+}
+
+.login_info p {
 	float:left;
 	font-size:12px;
-	width:300px;
-	margin:50px 0px 0px 0px;
-	font-family:"Helvetica";
+	padding:10px;
 }
 
 .nav_bar {

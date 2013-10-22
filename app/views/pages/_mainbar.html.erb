@@ -6,7 +6,8 @@
 		<% end %>
  	  <% if current_admin %>
  	   <div class="login_info">
-   		 <%= link_to "LOG OUT", log_out_path %>
+   		 <p><%= link_to "NEW PRODUCT", new_product_path %></p> 	   
+   		 <p><%= link_to "LOG OUT", log_out_path %> </p>
    	   </div>
   	  <% else %>
 		<p class="main_tagline"> all products made with faux leather </p>
