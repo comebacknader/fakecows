@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 	skip_before_filter :authorize
 
 	def home
-		@products = Product.all
+		@products = Product.order("created_at ASC")
 	end
 
 	def men
