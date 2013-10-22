@@ -5,4 +5,16 @@ class PagesController < ApplicationController
 		@products = Product.all
 	end
 
+	def men
+		@products = Product.where(:category => "men").order("created_at DESC")		
+	end
+
+	def women
+		@products = Product.where(:category => "women").order("created_at DESC")		
+	end
+
+	def furniture
+		@products = Product.where(:category => "furniture").order("created_at DESC")
+	end
+
 end

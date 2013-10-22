@@ -9,5 +9,9 @@ Fakecows::Application.routes.draw do
 get "logout" => "adminsessions#destroy", :as => "log_out"
 get "login" => "adminsessions#new", :as => "log_in"
 get "signup" => "admins#new", :as => "sign_up"
+
+get '/men', :to => 'pages#men'
+get '/women', :to => 'pages#women'
+get '/furniture', :to => 'pages#furniture'
  
 end
