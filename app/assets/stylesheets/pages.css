@@ -131,6 +131,10 @@ h2 {
 	border-bottom:1px solid #333;
 }
 
+.main_bar a {
+	color:#333;
+}
+
 .main_logo {
 	float:left;
 	width:300px;
@@ -178,6 +182,10 @@ h2 {
 	font-size:16px;	
 }
 
+.nav_bar a:visited {
+	color:#333;
+}
+
 .splash_container {
 	display:block;
 	min-width: 800px;
@@ -196,78 +204,16 @@ h2 {
 	margin:20px 0px 0px 40px;
 }
 
-.splash_tagline {
-	margin:0px 0px 0px 20px;
-	color:white;
-	font-size:75px;
-	text-align:left;
-}
-
-.splash_tagline_description {
-	color:white;
-	font-family:"Helvetica";
-	font-size:20px;
-	font-weight:none;
-	margin:5px 0px 0px 55px;
-	color:white;
-	text-align:center;
-	width:400px;
-	font-weight:none;
-}
-
-.invitation_button {
-	margin:40px 0px 0px 100px;
-	width:275px;
-	border:1px solid #0099FF;
-	padding:20px;
-	text-align:center;
-	font-family:"Helvetica";
-	color:white;
-	font-size:22px;
-	background-color:#0099FF;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	opacity:0.8;			
-}
-
-.invitation_button:hover {
-	border:1px solid white;
-	cursor:pointer;
-}
-
-.invitation_form {
-	display:none;
-	margin:40px 0px 0px 50px;
-}
-
-.invite_code_field {
+.footer {
 	float:left;
-	width:275px;
-	padding:20px 20px 20px 5px;
-	border:1px solid white;
-	font-size:16px;
+	border-top:1px solid #D0D0D0;
 	color:#333;
-}
-
-.invite_code_button {
-	float:left;
-	margin:0px 0px 0px 10px;
-	padding:15px;
-	border:1px solid #0099FF;
-	font-family:"Helvetica";
-	color:white;
-	font-weight:none;
-	font-size:24px;
-	background-color:#0099FF;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;			
-}
-
-.invite_code_button:hover {
-	border:1px solid #E8E8E8;
-	cursor:pointer;
+	width:100%;
+	font-size:12px;
+	padding:10px;
+	margin:10px 0px 10px 0px;
+	text-align: center;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 .failure {
