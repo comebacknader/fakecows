@@ -100,6 +100,15 @@ h2 {
 
 /* MAILCHIMP */
 
+.mail_container {
+	display:none;
+	min-width: 1024px;
+	max-width: 1024px;
+	margin: 0px auto;
+	background-color:none;	
+	width:expression(document.body.clientWidth < 782? "780px" : document.body.clientWidth > 1262? "1260px" : "auto");
+}
+
 #mc-embedded-subscribe-form {
 	float:left;
 	width:450px;
@@ -226,6 +235,7 @@ h2 {
 }
 
 .footer {
+	display:none;
 	float:left;
 	border-top:1px solid #D0D0D0;
 	color:#333;
