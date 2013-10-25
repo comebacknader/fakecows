@@ -247,6 +247,27 @@ h2 {
 	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
+#footer_faux {
+	float:left;
+	display:block;
+	font-size:12px;	
+	color:#333;	
+	width:200px;
+	margin:0px 0px 20px 100px;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+#copyright {
+	float:left;
+	display:block;
+	font-size:12px;	
+	color:#333;	
+	width:620px;
+	text-align:right;
+	margin:0px 0px 20px 0px;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+}
+
 .failure {
 	margin:5px 0px 0px 100px;
 	width:275px;
@@ -281,3 +302,17 @@ h2 {
 	font-weight:bold;
 }
 
+/* WHAT IS FAUX? */
+
+.what_is_faux_img {
+	float:left;
+	margin:20px 0px 20px 50px;
+}
+
+.what_is_faux {
+	float:left;
+	width:700px;
+	font-family:"Helvetica";
+	font-size:16px;
+	margin:20px 0px 50px 150px;
+}

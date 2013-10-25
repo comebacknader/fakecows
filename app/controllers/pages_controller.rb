@@ -17,4 +17,7 @@ class PagesController < ApplicationController
 		@products = Product.where(:category => "furniture").order("created_at DESC")
 	end
 
+	def polyurethane
+	end
+
 end

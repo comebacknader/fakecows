@@ -13,5 +13,6 @@ get "signup" => "admins#new", :as => "sign_up"
 get '/men', :to => 'pages#men'
 get '/women', :to => 'pages#women'
 get '/furniture', :to => 'pages#furniture'
+get '/faux', :to => 'pages#polyurethane'
  
 end
