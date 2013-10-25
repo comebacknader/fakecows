@@ -20,7 +20,7 @@ class ProductsController < ApplicationController
   end
 
   def show
-  	@product = Product.find(params[:id])
+  	@product = Product.friendly.find(params[:id])
   end
 
   def edit
@@ -47,7 +47,7 @@ class ProductsController < ApplicationController
 
   def product_params
     params.require(:product).permit(:brand, :title, :price, :description, :link,
-    			   :frontpage, :expired, :store, :photo, :category)
+    			   :frontpage, :expired, :store, :photo, :category, :slug)
   end
 
 end

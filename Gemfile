@@ -20,7 +20,7 @@ gem 'mail'
 gem 'kaminari'
 gem 'heroku'
 gem 'acts-as-taggable-on'
-gem "friendly_id", "~> 4.0.1"
+gem 'friendly_id', github: 'FriendlyId/friendly_id'
 gem 'thin'
 gem 'paperclip'
 gem 'rails_12factor', group: :production

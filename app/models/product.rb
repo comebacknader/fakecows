@@ -1,4 +1,6 @@
 class Product < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :full_name, use: :slugged
 
 
   has_attached_file :photo, :styles => { :small =>"250x250>", :medium => "350x450>", :large =>"550x550>" },
@@ -9,4 +11,11 @@ class Product < ActiveRecord::Base
               :secret_access_key => ENV['S3_SECRET_FAKECOW'],             
             }
 
+    def full_name
+    	"#{brand} #{title}"
+    end
+
+    def should_generate_new_friendly_id?
+    	new_record? || slug.blank? 
+    end
 end

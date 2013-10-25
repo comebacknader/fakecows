@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/FriendlyId/friendly_id.git
+  revision: 2764077e3af32a88114d68c75e20ef738e4fa829
+  specs:
+    friendly_id (5.0.0)
+      activerecord (~> 4.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -58,7 +65,6 @@ GEM
     faker (0.3.1)
     ffi (1.9.0)
     formatador (0.2.4)
-    friendly_id (4.0.10)
     guard (2.1.0)
       formatador (>= 0.2.4)
       listen (~> 2.1)
@@ -212,7 +218,7 @@ DEPENDENCIES
   aws-sdk
   bcrypt-ruby (~> 3.0.0)
   faker (= 0.3.1)
-  friendly_id (~> 4.0.1)
+  friendly_id!
   guard-rspec (= 0.5.5)
   heroku
   jquery-rails
