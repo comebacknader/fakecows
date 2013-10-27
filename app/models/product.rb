@@ -2,7 +2,6 @@ class Product < ActiveRecord::Base
   extend FriendlyId
   friendly_id :full_name, use: :slugged
 
-
   has_attached_file :photo, :styles => { :small =>"250x250>", :medium => "350x450>", :large =>"550x550>" },
               :storage => :s3, 
               :bucket => 'productphotos.fakecow.com',
@@ -18,4 +17,7 @@ class Product < ActiveRecord::Base
     def should_generate_new_friendly_id?
     	new_record? || slug.blank? 
     end
+
+      self.per_page = 15
+
 end

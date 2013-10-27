@@ -206,6 +206,7 @@ GEM
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
     uuidtools (2.1.4)
+    will_paginate (3.0.5)
     xml-simple (1.1.2)
 
 PLATFORMS
@@ -236,3 +237,4 @@ DEPENDENCIES
   therubyracer (= 0.10.2)
   thin
   uglifier (>= 1.0.3)
+  will_paginate (~> 3.0)

@@ -24,7 +24,7 @@ gem 'friendly_id', github: 'FriendlyId/friendly_id'
 gem 'thin'
 gem 'paperclip'
 gem 'rails_12factor', group: :production
-
+gem 'will_paginate', '~> 3.0'
 
 
 group :development do

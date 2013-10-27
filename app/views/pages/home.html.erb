@@ -18,10 +18,11 @@
 	<% end %>	
  </div>
 
-<div class="mail_container">
-  <%= render 'layouts/mailchimp' %>
-</div>
+ <div class="will_paginate">
+	 <%= will_paginate @products %>
+ </div>
 
-<%= render 'pages/footer' %>
+ 
+<%= render 'pages/footer' %>	
 
 </div>
