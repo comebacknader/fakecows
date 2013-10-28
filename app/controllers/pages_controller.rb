@@ -38,7 +38,5 @@ class PagesController < ApplicationController
 	def polyurethane
 	end
 
-	def pinterest
-	end
 
 end
