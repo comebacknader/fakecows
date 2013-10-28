@@ -10,6 +10,7 @@ class PagesController < ApplicationController
 	end
 
 	def men
+		@title = "Men's Faux Leather Fashion"
 		@products = Product.where(:category => "men").paginate(:page => params[:page], :order => 'created_at DESC')
 		respond_to do |format|
 	      format.html
@@ -18,6 +19,7 @@ class PagesController < ApplicationController
 	end
 
 	def women
+		@title = "Women's Faux Leather Fashion"		
 		@products = Product.where(:category => "women").paginate(:page => params[:page], :order => 'created_at DESC')
 		respond_to do |format|
 	      format.html
@@ -26,6 +28,7 @@ class PagesController < ApplicationController
 	end
 
 	def furniture
+		@title = "Faux Leather Furniture"		
 		@products = Product.where(:category => "furniture").paginate(:page => params[:page], :order => 'created_at DESC')
 		respond_to do |format|
 	      format.html
