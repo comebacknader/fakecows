@@ -15,4 +15,6 @@ get '/women', :to => 'pages#women'
 get '/furniture', :to => 'pages#furniture'
 get '/faux', :to => 'pages#polyurethane'
 get '/pinterest-2093b.html', :to => 'pages#pinterest-2093b.html'
+get '/about', :to => 'pages#about'
+
 end

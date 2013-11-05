@@ -27,6 +27,15 @@ class PagesController < ApplicationController
 	    end
 	end
 
+	def about
+		@title = "The FAKE COW Mission"
+		respond_to do |format|
+	      format.html
+	      format.js # add this line for your js template
+	    end		
+	end
+
+
 	def furniture
 		@title = "Faux Leather Furniture"		
 		@products = Product.where(:category => "furniture").paginate(:page => params[:page], :order => 'created_at DESC')
@@ -34,6 +43,7 @@ class PagesController < ApplicationController
 	      format.html
 	      format.js # add this line for your js template
 	    end	end
+
 
 	def polyurethane
 	end

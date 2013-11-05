@@ -322,3 +322,29 @@ h2 {
 	font-size:16px;
 	margin:20px 0px 50px 150px;
 }
+
+.what_is_us_img {
+	float:left;
+	margin:20px 0px 20px 50px;
+}
+
+.what_is_us {
+	float:left;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+	font-size:34px;
+	font-weight:bold;
+	color:#333;
+	margin:20px 0px 50px 10px;
+	text-align:center;
+}
+
+#contact_me {
+	float:left;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+	font-size:14px;
+	font-weight:bold;
+	color:#333;
+	width:1024px;
+	margin:20px 0px 50px 10px;
+	text-align:center;
+}
