@@ -48,5 +48,4 @@ class PagesController < ApplicationController
 	def polyurethane
 	end
 
-
 end

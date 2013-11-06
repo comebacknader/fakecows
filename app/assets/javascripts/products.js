@@ -2,6 +2,14 @@
 // All this logic will automatically be available in application.js.
 	 
 $(document).ready(function(){
+
+  $(function() {
+    $( "#email_modal" ).dialog({
+      height: 140,
+      modal: true
+    });
+  });
+
 	$("#all_products").imagesLoaded(function() {		
 	  $("#all_products").masonry({
 	  itemSelector: '.each_product',

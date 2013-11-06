@@ -104,28 +104,48 @@ h2 {
 .mail_container {
 	width:100%;
 	height:50px;
-	margin: 0px auto;
+	margin: 0px 0px 0px 250px;
 	background-color:none;	
 	width:expression(document.body.clientWidth < 782? "780px" : document.body.clientWidth > 1262? "1260px" : "auto");
+
 }
 
 #mc-embedded-subscribe-form {
 	float:left;
-	width:450px;
-	margin-left:270px;
+	width:550px;
+	margin-left:0px;
+}
+
+#mc_embed_signup input.email {
+	margin:0px !important;
 }
 
 #mc-embedded-subscribe {
 	display:inline !important;
-	width:50px !important;
-	padding:0px 0px 10px 0px !important;
+	width:150px !important;
+	height:100% !important;
+	padding:5px 0px 5px 0px !important;
 	border:1px solid #D0D0D0 !important;
 	border-radius:1px !important;
+	margin:0px !important;
+	background-color:#6699FF !important;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+}
+
+#mc-embedded-subscribe:hover {
+	opacity:0.8;
 }
 
 #mce-EMAIL {
 	float:left;
 	width:300px !important;
+	padding:13px 0px 12px 0px !important;
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1em;	
+}
+
+#mce-EMAIL:focus {
+	outline:0px solid #D0D0D0;
 }
 
 /* SPLASH PAGE */
@@ -347,4 +367,48 @@ h2 {
 	width:1024px;
 	margin:20px 0px 50px 10px;
 	text-align:center;
+}
+
+/* MODAL BOX */
+
+#email_modal {	
+	padding:10px;
+}
+
+#email_modal h1 {
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+	color:#333;
+	font-size:40px;
+	font-style:italic;
+}
+
+#email_modal h2 {
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+	color:#666666;
+	font-size:20px;
+	font-style:italic;	
+}
+
+div.ui-dialog {
+	height:270px !important;
+}
+
+.ui-dialog {
+	width:500px !important;
+	border-radius: 0px !important;
+}
+
+.ui-widget-content {
+	/* This is the background of the whole box */
+	height:170px !important;
+	overflow:hidden !important;		
+}
+
+.ui-widget-header {
+	background:none !important;
+	border:none !important;
+}
+
+.ui-widget-header a {
+	color:white !important;
 }

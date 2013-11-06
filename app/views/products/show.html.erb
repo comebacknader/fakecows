@@ -17,6 +17,11 @@
 					Check It Out
 				</div>
 			<% end %>
+			<% if current_admin %>
+			<%= button_to "delete", {:controller => :products,
+			      :action => 'destroy', :id => @product.id }, :method => :delete, class:"delete_product" %>
+			<% end %>
+
 
 			</div>
 	</div>

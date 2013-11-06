@@ -13,6 +13,7 @@ end
 gem "pg"
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem "jquery-rails"
+gem 'jquery-ui-rails'
 gem 'aws-s3'
 gem 'aws-sdk'
 gem 'sanitize'
