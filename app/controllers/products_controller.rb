@@ -21,6 +21,9 @@ class ProductsController < ApplicationController
 
   def show
   	@product = Product.friendly.find(params[:id])
+    @prodid = "#{@product.id}"
+    @pagetype = "product"
+    @totalvalue = @product.price
     @title = "#{@product.brand} #{@product.title}"
     @description = "#{@product.brand} #{@product.title} #{@product.description}"
   end
