@@ -227,7 +227,6 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   kaminari
-  mail
   paperclip
   pg
   rails (= 4.0.0)
