@@ -20,7 +20,7 @@
 <%= render 'layouts/googletags' %>
 
 
-   <% if session[:mail].nil?  %>
+   <% if cookies[:mail].nil?  %>
     <%= render 'pages/email' %>
    <% end %>
 
