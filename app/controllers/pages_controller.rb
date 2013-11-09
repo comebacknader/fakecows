@@ -42,10 +42,20 @@ class PagesController < ApplicationController
 		respond_to do |format|
 	      format.html
 	      format.js # add this line for your js template
-	    end	end
+	    end	
+	end
 
 
 	def polyurethane
+		@title = "What Is Polyurethane?"
 	end
 
+	def faux
+		@title = "What Is Faux Leather?"
+	end
+
+	def vegan
+		@title = "What Is Vegan Leather?"
+	end
+	
 end

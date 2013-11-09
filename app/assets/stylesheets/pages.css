@@ -329,47 +329,6 @@ h2 {
 	opacity:0;
 }
 
-/* WHAT IS FAUX? */
-
-.what_is_faux_img {
-	float:left;
-	margin:20px 0px 20px 50px;
-}
-
-.what_is_faux {
-	float:left;
-	width:700px;
-	font-family:"Helvetica";
-	font-size:16px;
-	margin:20px 0px 50px 150px;
-}
-
-.what_is_us_img {
-	float:left;
-	margin:20px 0px 20px 50px;
-}
-
-.what_is_us {
-	float:left;
-	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
-	font-size:34px;
-	font-weight:bold;
-	color:#333;
-	margin:20px 0px 50px 10px;
-	text-align:center;
-}
-
-#contact_me {
-	float:left;
-	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
-	font-size:14px;
-	font-weight:bold;
-	color:#333;
-	width:1024px;
-	margin:20px 0px 50px 10px;
-	text-align:center;
-}
-
 /* MODAL BOX */
 
 #email_modal {	
@@ -413,3 +372,82 @@ div.ui-dialog {
 .ui-widget-header a {
 	color:white !important;
 }
+
+/* ABOUT PAGE */
+
+.what_is_faux_img {
+	float:left;
+	margin:20px 0px 20px 50px;
+}
+
+.what_is_faux {
+	float:left;
+	width:700px;
+	font-family:"Helvetica";
+	font-size:16px;
+	margin:20px 0px 50px 150px;
+}
+
+.what_is_us_img {
+	float:left;
+	margin:20px 0px 20px 50px;
+}
+
+.what_is_us {
+	float:left;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+	font-size:34px;
+	font-weight:bold;
+	color:#333;
+	margin:20px 0px 50px 10px;
+	text-align:center;
+}
+
+#contact_me {
+	float:left;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+	font-size:14px;
+	font-weight:bold;
+	color:#333;
+	width:1024px;
+	margin:20px 0px 50px 10px;
+	text-align:center;
+}
+
+
+.what_is_box {
+	float:left;
+	width:320px;
+	height:150px;
+	border:1px solid #D0D0D0;
+	margin:0px 0px 20px 15px;
+	text-align:center;
+	background-color:#FCFCFC;
+}
+
+.what_is_box:hover {
+	background-color: #E6E6E6;
+}
+
+#what_is_polyurethane {
+	font-family:Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+	font-size:34px;
+	margin:30px 0px 0px 0px;
+	color:dimgray;
+}
+
+#what_is_vegan_leather {
+	font-family:Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+	font-size:34px;
+	margin:30px 0px 0px 0px;
+	color:dimgray;
+}
+
+#what_is_faux_leather {
+	font-family:Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+	font-size:34px;
+	margin:30px 0px 0px 0px;
+	color:dimgray;
+}
+
+
