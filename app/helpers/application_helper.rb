@@ -1,7 +1,7 @@
 module ApplicationHelper
  
  def title 
-    base_title = "fake cow | Faux Leather Fashion" 
+    base_title = "fake cow | Animal Free Fashion" 
     if @title.nil? 
       base_title
      else
@@ -10,7 +10,7 @@ module ApplicationHelper
  end
 
    def metacontent 
-    base_description = "Fake Cow - Discover and shop one of the largest collection of faux leather products in the world." 
+    base_description = "Fake Cow - Discover and shop one of the largest collection of animal-free product!" 
     if @description.nil?
       base_description
     else
