@@ -14,7 +14,7 @@
 
 			<%= link_to @product.link, :target => "_blank" do %>
 				<div class="show_product_link">
-					Check It Out
+						CHECK IT OUT 
 				</div>
 			<% end %>
 			<% if current_admin %>
@@ -26,12 +26,10 @@
 			</div>
 	</div>
 
-<div class="mail_container">
-  <%= render 'layouts/mailchimp' %>
-</div>
+	<div class="mail_container">
+	  <%= render 'layouts/mailchimp' %>
+	</div>
 
- <div class="footer">
- © Copyright 2013 FAKE COW | All rights reserved.
- </div>
+	<%= render 'pages/footer' %>
 
 </div>

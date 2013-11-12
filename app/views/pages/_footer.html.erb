@@ -1,7 +1,25 @@
  <div class="footer">
+ 	<div class="footer_nav">
+ 	<%= link_to about_path do %> 	
+ 	 <p> MISSION STATEMENT </p>
+ 	<% end %>
+ 	<%= link_to faux_path do %>
+ 	 <p> WHAT IS FAUX LEATHER? </p>
+ 	<% end %>
+ 	<%= link_to vegan_path do %>
+ 	 <p> WHAT IS VEGAN LEATHER? </p>
+ 	<% end %>
+ 	<%= link_to polyurethane_path do %>
+ 	 <p> WHAT IS POLYURETHANE? </p>	  
+ 	<% end %>	 
+ 	</div>
+ 	<%= link_to facebook do %>
+ 	<%= image_tag("facebook.jpg", id: "fb_button") %>
+ 	<% end %>
+ 	<%= link_to twitter do %>
+ 	<%= image_tag("twitter.jpg", id: "twitter_button") %>
+ 	<% end %>
+
  	<p id="copyright"> © Copyright 2013 FAKE COW | All rights reserved. </p> 
  	
- 	<%= link_to about_path do %>
- 		<p id="footer_faux"> WHAT IS FAKE COW? </p> 
- 	<% end %>
  </div>

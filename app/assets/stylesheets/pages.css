@@ -267,6 +267,23 @@ h2 {
 	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
+.footer_nav {
+	float:left;
+	width:850px;
+	margin:5px 0px 20px 35px;
+}
+
+.footer_nav p {
+	float:left;
+	display:block;
+	font-size:14px;	
+	color:#333;	
+	width:200px;
+	margin:0px 0px 0px 0px;
+	text-align:center;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+}
+
 #footer_faux {
 	float:left;
 	display:block;
@@ -275,6 +292,19 @@ h2 {
 	width:200px;
 	margin:0px 0px 20px 100px;
 	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+#fb_button {
+	float:left;
+	width:29px;
+	height:29px;
+}
+
+#twitter_button {
+	float:left;
+	width:29px;
+	height:29px;
+	margin-left:5px;
 }
 
 #copyright {
@@ -450,4 +480,9 @@ div.ui-dialog {
 	color:dimgray;
 }
 
+#facebook_box {
+	float:left;
+	width:350px;
+	background-color:black;
+}
 

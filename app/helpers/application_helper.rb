@@ -18,4 +18,12 @@ module ApplicationHelper
     end
   end 
 
+  def facebook 
+    facebook = "https://www.facebook.com/fakecow" 
+  end
+
+  def twitter
+    twitter = "https://www.twitter.com/fakecowleather" 
+  end
+
 end
