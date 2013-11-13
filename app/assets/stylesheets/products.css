@@ -94,7 +94,7 @@
 	border:1px solid #D0D0D0;
 	padding:5px;
 	font-family:"Helvetica";
-	margin:20px 0px 100px 0px;
+	margin:20px 0px 20px 0px;
 }
 
 .show_product_info {
@@ -171,3 +171,38 @@
 .delete_product:hover {
 	opacity:0.8;
 }
+
+#last_three_all {
+	float:left;
+	width:900px;
+	margin:0px 0px 40px 100px;
+}
+
+.last_three_each_product {
+	float:left;
+	width:250px;
+	border:1px solid #D0D0D0;
+	margin:0px 0px 10px 20px;
+}
+
+.last_three_each_product_img {
+	width:100%;
+	border:1px solid none;
+}
+
+.last_three_each_product_img:hover {
+	opacity:0.8;
+}
+
+.last_three_each_product_image:hover {
+	opacity:0.8;
+}
+
+.last_three_each_product_info {
+	float:left;
+	width:92%;
+	padding:10px;
+	border-top:1px solid #D0D0D0;
+	color:dimgray;
+}
+

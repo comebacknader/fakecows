@@ -21,10 +21,24 @@
 			<%= button_to "delete", {:controller => :products,
 			      :action => 'destroy', :id => @product.id }, :method => :delete, class:"delete_product" %>
 			<% end %>
-
-
 			</div>
 	</div>
+
+  <div id="last_three_all">
+	<% @products.each do |product| %>
+	<%= link_to product do %>
+	<div class="last_three_each_product">
+	 <div classs="last_three_each_product_image">
+		<%= image_tag(product.photo(:small), class: "last_three_each_product_img") %>
+	 </div>
+	<% end %> 
+	 <div class="last_three_each_product_info">
+		<p> <%= product.brand %> <%= product.title %> </p>
+		<p> <%= product.price %> </p>
+	 </div>	 	
+	</div>
+	<% end %>
+</div>
 
 	<div class="mail_container">
 	  <%= render 'layouts/mailchimp' %>

@@ -21,6 +21,13 @@ class ProductsController < ApplicationController
 
   def show
   	@product = Product.friendly.find(params[:id])
+    if @product.category == "women"
+      @all = Product.where(:category => "women")
+      @products = @all.where.not(id: @product.id).order("created_at DESC").limit(3)
+    else 
+      @all = Product.where(:category => "men")
+      @products = @all.where.not(id: @product.id).order("created_at DESC").limit(3)
+    end
     @prodid = "#{@product.id}"
     @pagetype = "product"
     @totalvalue = @product.price
