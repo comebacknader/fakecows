@@ -99,14 +99,14 @@
 
 .show_product_info {
 	float:right;
-	width:400px;
+	width:450px;
 	border:1px solid none;
 	padding:20px 10px 10px 10px;
 }
 
 .show_product_image {
 	float:left;
-	margin:20px 0px 20px 20px;
+	margin:20px 0px 20px 110px;
 }
 
 .show_product_header {
