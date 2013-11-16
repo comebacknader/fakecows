@@ -486,3 +486,20 @@ div.ui-dialog {
 	background-color:black;
 }
 
+
+/* INFINITE SCROLL */
+
+
+#infscr-loading {
+	opacity:0 !important;
+}
+
+#done_text {
+	color:black;
+	font-size:25px;
+	border:1px solid #D0D0D0;
+	margin:10px 0px 0px 0px !important;
+}
+
+
+

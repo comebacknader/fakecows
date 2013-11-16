@@ -21,7 +21,7 @@ $(document).ready(function(){
 	               // selector for the paged navigation (it will be hidden)
 	nextSelector : "div.pagination a:first",    
 	               // selector for the NEXT link (to page 2)
-	itemSelector : "#all_products"},   
+	itemSelector : ".each_product"},   
 	               // selector for all items you'll retrieve
           // trigger Masonry as a callback
           function( newElements ) {
