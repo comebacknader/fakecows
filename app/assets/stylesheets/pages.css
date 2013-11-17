@@ -413,7 +413,7 @@ div.ui-dialog {
 .what_is_faux {
 	float:left;
 	width:700px;
-	font-family:"Helvetica";
+	font: 0.75em/1.75em 'Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-size:16px;
 	margin:20px 0px 50px 150px;
 }
@@ -501,5 +501,16 @@ div.ui-dialog {
 	margin:10px 0px 0px 0px !important;
 }
 
+
+/* HEALTH PAGE */
+
+.health_img {
+	float:left;
+	margin:20px 0px 20px 150px;
+}
+
+.health_img:hover {
+	opacity:0.8;
+}
 
 

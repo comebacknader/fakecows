@@ -35,6 +35,11 @@ class PagesController < ApplicationController
 	    end		
 	end
 
+	def health
+		@title = "Living a Healthy Life"
+		
+	end
+
 
 	def furniture
 		@title = "Animal Free Furniture"		
