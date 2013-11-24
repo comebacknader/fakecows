@@ -5,6 +5,8 @@ Fakecows::Application.routes.draw do
  resources :products
  resources :admins
  resources :adminsessions
+ resources :juicers
+
 
 get "logout" => "adminsessions#destroy", :as => "log_out"
 get "login" => "adminsessions#new", :as => "log_in"
@@ -19,5 +21,7 @@ get '/about', :to => 'pages#about'
 get '/vegan', :to => 'pages#vegan'
 get '/faux', :to => 'pages#faux'
 get '/health', :to => 'pages#health'
+get '/recipes', :to => 'pages#recipes'
+
 
 end

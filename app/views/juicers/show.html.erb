@@ -1,0 +1,49 @@
+<%= render 'pages/mainbar' %>
+
+<div class="container">
+
+	<div class="show_product_box">
+			
+			<%= image_tag(@juicer.photo(:medium), class:"show_product_image") %>
+			
+			<div class="show_product_info">
+				<p class="show_product_header"> <%= @juicer.brand %> </p>
+				<p  class="show_product_title"> <%= @juicer.title %> </p>
+				<p class="show_product_price"> <%= @juicer.price %> </p>
+				<p  class="show_product_description"> <%= @juicer.description.gsub(/\n/, '<br/>').html_safe %> </p>
+
+			<%= link_to @juicer.link, :target => "_blank" do %>
+				<div class="show_product_link">
+						CHECK IT OUT 
+				</div>
+			<% end %>
+			<% if current_admin %>
+			<%= button_to "delete", {:controller => :products,
+			      :action => 'destroy', :id => @juicer.id }, :method => :delete, class:"delete_product" %>
+			<% end %>
+			</div>
+	</div>
+
+  <div id="last_three_all">
+	<% @juicers.each do |juicer| %>
+	<%= link_to juicer do %>
+	<div class="last_three_each_product">
+	 <div classs="last_three_each_product_image">
+		<%= image_tag(juicer.photo(:small), class: "last_three_each_product_img") %>
+	 </div>
+	<% end %> 
+	 <div class="last_three_each_product_info">
+		<p> <%= juicer.brand %> <%= juicer.title %> </p>
+		<p> <%= juicer.price %> </p>
+	 </div>	 	
+	</div>
+	<% end %>
+</div>
+
+	<div class="mail_container">
+	  <%= render 'layouts/mailchimp' %>
+	</div>
+
+	<%= render 'pages/footer' %>
+
+</div>

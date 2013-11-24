@@ -1,0 +1,20 @@
+<%= render 'pages/mainbar' %>
+
+
+<div id="container">
+  <div id="all_juicers">
+	<% @juicers.each do |juicer| %>
+	<%= link_to juicer do %>
+	<div class="each_product">
+	 <div classs="each_product_image">
+		<%= image_tag(juicer.photo, class: "each_product_img") %>
+	 </div>
+	<% end %> 
+	 <div class="each_product_info">
+		<p> <%= juicer.brand %> <%= juicer.title %> </p>
+		<p> <%= juicer.price %> </p>
+	 </div>	 	
+	</div>
+	<% end %>	
+ </div>
+</div>

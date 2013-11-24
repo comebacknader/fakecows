@@ -37,7 +37,10 @@ class PagesController < ApplicationController
 
 	def health
 		@title = "Living a Healthy Life"
-		
+	end
+
+	def recipes
+		@title = "Animal Free Recipes"
 	end
 
 

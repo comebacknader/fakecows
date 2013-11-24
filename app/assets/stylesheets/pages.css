@@ -504,13 +504,35 @@ div.ui-dialog {
 
 /* HEALTH PAGE */
 
+#health_features {
+	float:left;
+	width:70%;
+	margin:10px 0px 20px 0px;
+}
+
 .health_img {
 	float:left;
-	margin:20px 0px 20px 150px;
+	margin:0px 0px 0px 10px;
 }
 
 .health_img:hover {
 	opacity:0.8;
 }
 
+#health_sidebar {
+	float:left;
+	width:25%;
+	height:700px;
+	border:1px solid none;
+}
 
+#health_list {
+	float:left;
+	margin:20px 20px 20px 80px;
+}
+
+#health_list p {
+	font-size:24px;	
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+
+}
