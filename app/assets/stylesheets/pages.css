@@ -537,8 +537,6 @@ div.ui-dialog {
 	padding:10px 0px 0px 0px;
 }
 
-
-
 #health_list a:link {
 	color:#333;
 }
@@ -554,5 +552,13 @@ div.ui-dialog {
 #health_list p {
 	font-size:34px;	
 	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
-
 }
+
+.each_juicer_sidebar {
+	display:inline;
+	float:left;
+	width:250px;
+	border:1px solid #D0D0D0;
+	margin:0px 0px 10px 10px;
+}
+

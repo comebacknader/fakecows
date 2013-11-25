@@ -55,20 +55,18 @@
 #all_juicers {
 	float:left;
 	width:70%;
-	margin:0px 0px 40px 10px;
+	margin:0px 0px 40px 0px;
 }
 
 .each_juicer {
-	clear:left;
 	display:inline;
 	float:left;
-	width:25%;
+	width:250px;
 	border:1px solid #D0D0D0;
 	margin:0px 0px 10px 10px;
 }
 
-.each_product_img {
-	width:100%;
+.each_juicer_img {
 	border:1px solid none;
 }
 

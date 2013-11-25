@@ -2,7 +2,7 @@ class Juicer < ActiveRecord::Base
   extend FriendlyId
   friendly_id :full_name, use: :slugged
 
-  has_attached_file :photo, :styles => { :small =>"250x250>", :medium => "350x450>", :large =>"550x550>" },
+  has_attached_file :photo, :styles => { :small =>"250x250>", :medium => "350x350>", :large =>"550x550>" },
               :storage => :s3, 
               :bucket => 'juicerphoto.fakecow.com',
               :s3_credentials => {
