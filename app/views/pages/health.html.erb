@@ -1,26 +1,29 @@
-<%= render 'pages/mainbar' %>
+  <%= render 'pages/mainbar' %>
 
 
 	<div id="container">
-	 <div id="health_sidebar">
-  	 <div id="health_list">
-  	  <%= link_to health_path do %>
-  	 		<p>ALL</p>
-  	 	<% end %>
-  	 	<%= link_to recipes_path do %>
-  	 		<p>RECIPES</p>
-  	 	<% end %>
-  	 	<%= link_to juicers_path do %>
-  	 		<p>JUICERS</p>
-  	 	<% end %>
-  	 </div>
-  </div>
+
+  <%= render 'pages/health_nav' %>
 
   <div id="health_features">
 			<%= image_tag("carrot_test.jpg", class: "health_img") %>
-			<%= image_tag("carrot_test.jpg", class: "health_img") %>
+			<%= image_tag("Beet_juice_test.png", class: "health_img") %>
 		</div>
 
+  <% @juicers.each do |juicer| %>
+  <%= link_to juicer do %>
+  <div class="each_juicer">
+   <div classs="each_product_image">
+    <%= image_tag(juicer.photo, class: "each_product_img") %>
+   </div>
+  <% end %> 
+   <div class="each_juicer_info">
+    <p> <%= juicer.brand %> <%= juicer.title %> </p>
+    <p> <%= juicer.price %> </p>
+   </div>   
+  </div>
+  <% end %>  
+  
 	<div class="mail_container">
   		<%= render 'layouts/mailchimp' %>
 	</div>

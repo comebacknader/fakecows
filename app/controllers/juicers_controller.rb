@@ -54,7 +54,7 @@ class JuicersController < ApplicationController
 
   def juicer_params
     params.require(:juicer).permit(:brand, :title, :price, :description, :link,
-    			   :frontpage, :expired, :store, :photo, :category, :slug)
+    			         :store, :photo, :machine, :slug)
   end
 
 end

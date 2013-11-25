@@ -2,6 +2,8 @@
 
 
 <div id="container">
+<%= render 'pages/health_nav' %>
+
   <div id="all_juicers">
 	<% @juicers.each do |juicer| %>
 	<%= link_to juicer do %>
@@ -10,7 +12,7 @@
 		<%= image_tag(juicer.photo, class: "each_product_img") %>
 	 </div>
 	<% end %> 
-	 <div class="each_product_info">
+	 <div class="each_juicer_info">
 		<p> <%= juicer.brand %> <%= juicer.title %> </p>
 		<p> <%= juicer.price %> </p>
 	 </div>	 	

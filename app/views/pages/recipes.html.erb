@@ -1,18 +1,8 @@
 <%= render 'pages/mainbar' %>
 
 
-	<div id="container">
-	 <div id="health_sidebar">
-  	 <div id="health_list">
-  	  <%= link_to health_path do %>
-  	 		<p>ALL</p>
-  	 	<% end %>
-  	 	<%= link_to recipes_path do %> 
-  	 		<p>RECIPES</p>
-  	 		<p>JUICERS</p>
-      <% end %>
-  	 </div>
-  </div>
+  <div id="container">
+  <%= render 'pages/health_nav' %>
 
   <div id="health_features">
 			<%= image_tag("carrot_test.jpg", class: "health_img") %>

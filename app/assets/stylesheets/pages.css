@@ -505,9 +505,11 @@ div.ui-dialog {
 /* HEALTH PAGE */
 
 #health_features {
-	float:left;
+	display:inline;
+	float:right;
 	width:70%;
-	margin:10px 0px 20px 0px;
+	margin:0px 0px 20px 20px;
+	border:1px solid none;
 }
 
 .health_img {
@@ -516,23 +518,41 @@ div.ui-dialog {
 }
 
 .health_img:hover {
-	opacity:0.8;
 }
 
 #health_sidebar {
+	display:inline;
 	float:left;
 	width:25%;
-	height:700px;
+	margin:0px 0px 0px 10px;
 	border:1px solid none;
 }
 
 #health_list {
 	float:left;
-	margin:20px 20px 20px 80px;
+	margin:0px 0px 20px 0px;
+	border-top:1px solid black;	
+	border-bottom:1px solid black;
+	width:100%;
+	padding:10px 0px 0px 0px;
+}
+
+
+
+#health_list a:link {
+	color:#333;
+}
+
+#health_list a:visited {
+	color:#333;
+}
+
+#health_list a:active {
+	color:#333;
 }
 
 #health_list p {
-	font-size:24px;	
+	font-size:34px;	
 	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
 
 }

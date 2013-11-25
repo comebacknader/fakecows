@@ -53,14 +53,16 @@
 /* PRODUCT INDEX */
 
 #all_juicers {
-	position:absolute;
-	width:1024px;
-	margin:0px 0px 40px 20px;
+	float:left;
+	width:70%;
+	margin:0px 0px 40px 10px;
 }
 
-.each_product {
+.each_juicer {
+	clear:left;
+	display:inline;
 	float:left;
-	width:30%;
+	width:25%;
 	border:1px solid #D0D0D0;
 	margin:0px 0px 10px 10px;
 }
@@ -78,9 +80,9 @@
 	opacity:0.8;
 }
 
-.each_product_info {
+.each_juicer_info {
 	float:left;
-	width:94%;
+	width:91%;
 	padding:10px;
 	border-top:1px solid #D0D0D0;
 	color:dimgray;
@@ -204,5 +206,16 @@
 	padding:10px;
 	border-top:1px solid #D0D0D0;
 	color:dimgray;
+}
+
+/* ADDED STYLES */
+
+
+.show_product_machine {
+	float:left;
+	font-size:14px;
+	color:#333;
+	width:300px;
+	font-style:italic;
 }
 
