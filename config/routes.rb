@@ -6,6 +6,7 @@ Fakecows::Application.routes.draw do
  resources :admins
  resources :adminsessions
  resources :juicers
+ resources :articles
 
 
 get "logout" => "adminsessions#destroy", :as => "log_out"

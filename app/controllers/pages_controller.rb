@@ -38,6 +38,7 @@ class PagesController < ApplicationController
 	def health
 		@title = "Living a Healthy Life"
 		@juicers = Juicer.order("created_at DESC").limit(1)
+		@articles = Article.order("created_at DESC").limit(1)
 	end
 
 	def recipes

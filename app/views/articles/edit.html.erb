@@ -1,0 +1,26 @@
+<%= render 'pages/mainbar' %>
+
+<div class="container">
+
+	<div class="new_product_box">
+
+	<%= form_for @article, :html => { :multipart => true }  do |f| %>
+
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+
+		<%= f.label :subtitle %>
+		<%= f.text_field :subtitle %>
+
+		<%= f.label :content %>
+		<%= f.text_area :content %>		
+
+  		<%= f.file_field :photo %>	
+
+		<%= f.submit %>
+
+	<% end %>
+
+	</div>
+
+</div>

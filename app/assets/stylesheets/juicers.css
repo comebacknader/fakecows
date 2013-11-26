@@ -54,8 +54,9 @@
 
 #all_juicers {
 	float:left;
-	width:70%;
-	margin:0px 0px 40px 0px;
+	width:65%;
+	margin:0px 0px 40px 80px;
+	border:1px solid none;
 }
 
 .each_juicer {

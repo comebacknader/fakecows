@@ -1,0 +1,136 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.new_article_box {
+	float:left;
+	width:820px;
+	border:1px solid none;
+	padding:10px;
+	margin:20px 0px 20px 100px;
+	font-family:"Helvetica";
+}
+
+.new_article_box form input {
+	display:block;
+	width:400px;
+	padding:5px;
+	font-size:14px;
+}
+
+.new_article_box form textarea {
+	display:block;
+	width:800px;
+	height:100px;
+	padding:5px;
+	font-size:14px;
+}
+
+.new_article_box form label {
+	display:block;
+	padding:5px;
+	margin:10px 0px 0px 0px;
+}
+
+.new_article_box form input[type=checkbox] {
+	float:left;
+	margin:0px 0px 0px 0px;
+}
+
+.new_article_box form input[type=submit] {
+	margin:40px 0px 0px 0px;
+	width:400px;
+	border:1px solid #D0D0D0;
+	background-color:whitesmoke;
+}
+
+.new_article_box form input[type=submit]:hover {
+	background-color:#D0D0D0;
+}
+
+
+/* SHOW ARTICLE */
+
+/* PRODUCT SHOW */
+
+.show_article_box {
+	float:left;
+	width:1024px;
+	border:1px solid #D0D0D0;
+	padding:5px;
+	font-family:"Helvetica";
+	margin:20px 0px 20px 0px;
+}
+
+.show_product_info {
+	float:right;
+	width:800px;
+	border:1px solid none;
+	padding:20px 10px 10px 10px;
+}
+
+.show_product_image {
+	float:left;
+	margin:20px 0px 20px 110px;
+}
+
+.show_article_subtitle {
+	float:left;
+	font-size:16px;
+	color:#6f6d68;
+	width:1024px;
+	text-align: center;
+	font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;	
+}
+
+.show_article_title {
+	float:left;
+	font-size:34px;
+	color:#333;
+	width:1024px;
+	text-align:center;
+	font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;	
+}
+
+.show_article_content {
+	float:left;
+	font-size:14px;
+	color:#333;
+	width:1024px;
+	text-align:center;
+	margin:10px 0px 0px 0px;
+	font-family: "Proxima N W15 Reg";	
+}
+
+.show_product_link {
+	float:left;
+	width:300px;
+	padding:10px;
+	text-align:center;
+	font-family: "Trebuchet MS","Lucida Sans Unicode","Lucida Grande","Lucida Sans",Arial,sans-serif;
+	font-weight:bold;
+	color:white;
+	background-color:#6699FF;
+	margin:40px 0px 0px 30px;
+}
+
+.show_product_link:hover {
+	opacity:0.8;
+}
+
+.delete_product {
+	float:left;
+	width:300px;
+	padding:10px;
+	text-align:center;
+	font-weight:bold;
+	color:white;
+	background-color:red;
+	margin:10px 0px 0px 40px;	
+}
+
+.delete_product:hover {
+	opacity:0.8;
+}
+

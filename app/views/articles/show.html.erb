@@ -1,0 +1,18 @@
+<%= render 'pages/mainbar' %>
+
+<div class="container">
+
+	<div class="show_article_box">
+						
+				<p class="show_article_title"> <%= @article.title %> </p>
+				<p  class="show_article_subtitle"> <%= @article.subtitle %> </p>				
+				<p  class="show_article_content"> <%= @article.content.gsub(/\n/, '<br/>').html_safe %> </p>
+	</div>
+
+	<div class="mail_container">
+	  <%= render 'layouts/mailchimp' %>
+	</div>
+
+	<%= render 'pages/footer' %>
+
+</div>

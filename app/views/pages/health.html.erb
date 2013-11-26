@@ -6,7 +6,11 @@
   <%= render 'pages/health_nav' %>
 
   <div id="health_features">
+   <% @articles.each do |article| %>
+    <%= link_to article do %>
 			<%= image_tag("carrot_test.jpg", class: "health_img") %>
+    <% end %>
+   <% end %>
 		</div>
 
   <% @juicers.each do |juicer| %>
