@@ -1,0 +1,17 @@
+
+<div id="container">
+
+  <%= render 'pages/navbar' %>
+
+	<div id="home_box">
+   <div id="blog_box">
+   <% @articles.each do |article| %>
+    <%= link_to article do %>
+			<%= image_tag("what_is_us.jpg", class: "blog_image") %>
+    <% end %>
+   <% end %>
+   </div>
+	<%= render 'pages/footer' %>
+
+	</div>
+</div>

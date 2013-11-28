@@ -1,7 +1,8 @@
-<%= render 'pages/mainbar' %>
-
-
 <div id="container">
+
+<%= render 'pages/navbar' %>
+
+<div id="home_box">
   <div id="all_products">
 	<% @products.each do |product| %>
 	<%= link_to product do %>
@@ -11,8 +12,11 @@
 	 </div>
 	<% end %> 
 	 <div class="each_product_info">
-		<p> <%= product.brand %> <%= product.title %> </p>
+	  <%= link_to product do %>
+	  <% name = product.brand + product.title %>
+		<p id="each_product_brand"> <%= truncate(name.upcase, length: 50) %> </p>
 		<p> <%= product.price %> </p>
+	  <% end %>		
 	 </div>	 	
 	</div>
 	<% end %>	
@@ -22,8 +26,6 @@
 	 <%= will_paginate @products %>
  </div>
 
- <div class="mail_container">
-  <%= render 'layouts/mailchimp' %>
 </div>
 
 <%= render 'pages/footer' %>

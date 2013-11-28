@@ -57,7 +57,7 @@
 .show_article_box {
 	float:left;
 	width:1024px;
-	border:1px solid #D0D0D0;
+	border:1px solid none;
 	padding:5px;
 	font-family:"Helvetica";
 	margin:20px 0px 20px 0px;
@@ -70,9 +70,10 @@
 	padding:20px 10px 10px 10px;
 }
 
-.show_product_image {
+.show_article_image {
 	float:left;
-	margin:20px 0px 20px 110px;
+	margin:0px 0px 20px 150px;
+	border:1px solid black;
 }
 
 .show_article_subtitle {

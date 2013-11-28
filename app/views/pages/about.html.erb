@@ -1,24 +1,21 @@
-<%= render 'pages/mainbar' %>
+<div id="container">
 
+<%= render 'pages/navbar' %>
 
-	<div id="container">
+	<div id="home_box">
+  <div id="about_box">
+			<%= image_tag("what_is_us.png", class: "what_is_us") %>
 
-		<%= image_tag("what_is_us.png", class: "what_is_us") %>
-
-	<p class="what_is_us">
-		We scour the internet finding the latest fashionable items that are made without harming animals. <br/><br/>
-		We strive to make sure that <em>NO ANIMALS</em> have been killed or abused in the making of these products.   
-	</p>
-		<p id="contact_me"> 
-			If there are any questions, you can reach us directly at comebacknader@gmail.com 
-		</p>
-  
-<%= render 'pages/leathernav' %>
-
-	<div class="mail_container">
-  		<%= render 'layouts/mailchimp' %>
-	</div>
-
-	<%= render 'pages/footer' %>
-
-	</div>
+			<p class="what_is_us">
+				We scour the internet finding the latest fashionable items that are made without harming animals. <br/><br/>
+				We strive to make sure that <em>NO ANIMALS</em> have been killed or abused in the making of these products.   
+			</p>
+				<p id="contact_me"> 
+					If there are any questions, you can reach us directly at comebacknader@gmail.com 
+				</p>
+		</div>
+					  
+				<%= render 'pages/leathernav' %>
+				<%= render 'pages/footer' %>
+ </div>
+</div>

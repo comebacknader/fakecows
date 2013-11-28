@@ -13,14 +13,14 @@ class ApplicationController < ActionController::Base
         end
 
 
-  def first_time_visiting
+ def first_time_visiting
     if cookies[:mail].nil?
       session[:mail] = 1
       @session = session[:mail]
       cookies[:mail] = { :value => "#{@session}", :expires => 3.months.from_now}
     end
   end
-
+ 
 
 private
 

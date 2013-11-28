@@ -5,7 +5,10 @@
 	padding:0;
 } 
 
-a {text-decoration:none}
+a {
+	text-decoration:none;
+	color:#333;
+}
 
 a img {
 	border:none;
@@ -48,6 +51,11 @@ h2 {
   color: #999;
 }
 
+#home_box {
+	margin-left: 200px;
+	margin-top: 0;
+}
+
 .container {
 	display:block;
 	min-width: 1024px;
@@ -60,9 +68,9 @@ h2 {
 #container {
 	display:block;
 	min-width: 1024px;
-	max-width: 1024px;
+	max-width: 1260px;
+	height:500px;
 	margin: 0px auto;
-	background-color:none;	
 	width:expression(document.body.clientWidth < 782? "780px" : document.body.clientWidth > 1262? "1260px" : "auto");
 }
 
@@ -102,19 +110,17 @@ h2 {
 
 
 .mail_container {
-	display:none;
-	width:100%;
-	height:50px;
-	margin: 0px 0px 0px 250px;
+	border:1px solid none;
+	width:250px;
+	margin:0px 0px 10px 0px !important;
 	background-color:none;	
 	width:expression(document.body.clientWidth < 782? "780px" : document.body.clientWidth > 1262? "1260px" : "auto");
 
 }
 
 #mc-embedded-subscribe-form {
-	float:left;
-	width:550px;
-	margin-left:0px;
+	margin:0px !important;
+	padding:0px !important;
 }
 
 #mc_embed_signup input.email {
@@ -123,14 +129,15 @@ h2 {
 
 #mc-embedded-subscribe {
 	display:inline !important;
-	width:150px !important;
-	height:45px !important;
-	padding:5px 0px 5px 0px !important;
+	width:50px !important;
+	padding:0px 0px 0px 0px !important;
 	border:1px solid #D0D0D0 !important;
 	border-radius:1px !important;
 	margin:0px !important;
-	background-color:#6699FF !important;
+	color:white;
+	background-color:dimgray !important;
 	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+	font-size:12px !important;
 }
 
 #mc-embedded-subscribe:hover {
@@ -139,8 +146,8 @@ h2 {
 
 #mce-EMAIL {
 	float:left;
-	width:300px !important;
-	padding:13px 0px 12px 0px !important;
+	width:150px !important;
+	padding:6px 0px 6px 0px !important;
 	font-family: Verdana,Arial,sans-serif;
 	font-size: 1em;	
 }
@@ -175,11 +182,10 @@ h2 {
 }
 
 .main_bar {
-	width:100%;
-	text-align: right;
+	width:200px;
+	text-align: left;
 	height:75px;
 	margin:20px 0px 0px 0px;
-	border-bottom:1px solid #333;
 }
 
 .main_bar a {
@@ -187,17 +193,15 @@ h2 {
 }
 
 .main_logo {
-	float:left;
-	width:300px;
-	margin:0px 0px 0px 350px;
+	width:200px;
+	margin:0px 0px 10px 0px;
 }
 
 .main_tagline {
-	float:right;
-	width:300px;
-	font-size:16px;
+	width:200px;
+	font-size:12px !important;
 	color:#333;
-	margin:50px 0px 0px 0px;
+	margin:0px 0px 0px 5px;
 	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
 }
 
@@ -216,24 +220,51 @@ h2 {
 }
 
 .nav_bar {
-	width:96%;
+	position:fixed;
 	height:20px;
-	text-align:center;
+	text-align:left;
 	background-color:none;
 	padding:5px 0px 0px 0px;
-	margin:10px 0px 20px 0px;	
+	margin:20px 0px 0px 20px;	
+	border:1px solid none;
+	height:100%;
 }
 
 .nav_bar p {
-	display:inline;
-	text-align: center;
-	padding:20px;
+	display:block;
+	text-align: left;
 	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-	font-size:16px;	
+	font-size:26px;	
 }
 
 .nav_bar a:visited {
 	color:#333;
+}
+
+
+.nav_bar a {
+	color:#333;
+}
+
+.nav_menu {
+	border:1px solid none;
+	margin:50px 0px 0px 0px;
+	padding:0px !important;
+}
+
+.admin_controls {
+	border-top:1px solid black;
+	margin:100px 0px 0px 0px;
+	padding-top:10px;	
+	width:150px;
+}
+
+.admin_controls p {
+	font-size:14px;
+}
+
+#men_selected {
+	color:#6699FF !important;
 }
 
 .splash_container {
@@ -255,14 +286,13 @@ h2 {
 }
 
 .footer {
-	display:none;
 	float:left;
 	border-top:1px solid #D0D0D0;
 	color:#333;
-	width:100%;
+	width:900px;
 	font-size:12px;
 	padding:10px;
-	margin:10px 0px 10px 0px;
+	margin:10px 0px 10px 100px;
 	text-align: center;
 	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
@@ -310,10 +340,10 @@ h2 {
 #copyright {
 	float:left;
 	display:block;
-	font-size:12px;	
+	font-size:10px;	
 	color:#333;	
-	width:620px;
-	text-align:right;
+	width:900px;
+	text-align:center;
 	margin:0px 0px 20px 0px;
 	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
 }
@@ -363,6 +393,7 @@ h2 {
 
 #email_modal {	
 	padding:10px;
+	margin-left:100px;
 }
 
 #email_modal h1 {
@@ -405,6 +436,13 @@ div.ui-dialog {
 
 /* ABOUT PAGE */
 
+#about_box {
+	float:left;
+	display:block;
+	width:900px;
+	margin:10px 0px 0px 100px;
+}
+
 .what_is_faux_img {
 	float:left;
 	margin:20px 0px 20px 50px;
@@ -412,15 +450,16 @@ div.ui-dialog {
 
 .what_is_faux {
 	float:left;
-	width:700px;
+	width:800px;
 	font: 0.75em/1.75em 'Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-size:16px;
-	margin:20px 0px 50px 150px;
+	margin:20px 0px 50px 100px;
 }
 
 .what_is_us_img {
 	float:left;
 	margin:20px 0px 20px 50px;
+	width:800px;
 }
 
 .what_is_us {
@@ -429,6 +468,7 @@ div.ui-dialog {
 	font-size:34px;
 	font-weight:bold;
 	color:#333;
+	width:900px;
 	margin:20px 0px 50px 10px;
 	text-align:center;
 }
@@ -439,16 +479,21 @@ div.ui-dialog {
 	font-size:14px;
 	font-weight:bold;
 	color:#333;
-	width:1024px;
-	margin:20px 0px 50px 10px;
+	width:900px;
+	margin:10px 0px 50px 0px;
 	text-align:center;
 }
 
+#leathernav_box {
+	float:left;
+	margin:0px 0px 0px 150px;
+	width:900px;
+}
 
 .what_is_box {
 	float:left;
-	width:320px;
-	height:150px;
+	width:250px;
+	height:110px;
 	border:1px solid #D0D0D0;
 	margin:0px 0px 20px 15px;
 	text-align:center;
@@ -461,21 +506,21 @@ div.ui-dialog {
 
 #what_is_polyurethane {
 	font-family:Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
-	font-size:34px;
+	font-size:24px;
 	margin:30px 0px 0px 0px;
 	color:dimgray;
 }
 
 #what_is_vegan_leather {
 	font-family:Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
-	font-size:34px;
+	font-size:24px;
 	margin:30px 0px 0px 0px;
 	color:dimgray;
 }
 
 #what_is_faux_leather {
 	font-family:Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
-	font-size:34px;
+	font-size:24px;
 	margin:30px 0px 0px 0px;
 	color:dimgray;
 }
@@ -507,8 +552,8 @@ div.ui-dialog {
 #health_features {
 	display:inline;
 	float:right;
-	width:70%;
-	margin:0px 0px 20px 20px;
+	width:900px;
+	margin:30px 0px 20px 100px;
 	border:1px solid none;
 }
 
@@ -560,5 +605,25 @@ div.ui-dialog {
 	width:250px;
 	border:1px solid #D0D0D0;
 	margin:0px 0px 10px 10px;
+}
+
+/* BLOG PAGE */
+
+#blog_box {
+	float:left;
+	display:block;
+	margin:30px 0px 0px 0px;
+}
+
+
+.blog_image {
+	float:left;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+	font-size:34px;
+	font-weight:bold;
+	color:#333;
+	width:900px;
+	margin:0px 0px 50px 100px;
+	text-align:center;
 }
 

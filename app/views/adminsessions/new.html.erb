@@ -1,13 +1,7 @@
-<div class="container">
-	<div class="main_bar">
-		<%= link_to root_path do %>
-				<%= image_tag("LOGO.png", class:"main_logo") %>
-		<% end %>
-	</div>
-</div>
+<div id="container">
+ <%= render 'pages/navbar' %>
 
-<div class="container">
-
+  <div id="home_box">
 	<div class="new_admin_box">
 
 	<%= form_tag adminsessions_path do %>
@@ -21,7 +15,6 @@
 		<%= submit_tag %>
 
 	<% end %>
-
 	</div>
-
+  </div>
 </div>

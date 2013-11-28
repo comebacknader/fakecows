@@ -3,7 +3,9 @@
 <div class="container">
 
 	<div class="show_article_box">
-						
+		
+			<%= image_tag(@article.photo(:normal), class:"show_article_image") %>
+
 				<p class="show_article_title"> <%= @article.title %> </p>
 				<p  class="show_article_subtitle"> <%= @article.subtitle %> </p>				
 				<p  class="show_article_content"> <%= @article.content.gsub(/\n/, '<br/>').html_safe %> </p>

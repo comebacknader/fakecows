@@ -1,0 +1,60 @@
+
+	<div class="nav_bar">
+
+		<%= link_to root_path do %>
+				<%= image_tag("LOGO.png", class:"main_logo") %>
+		<% end %>
+		
+		<p class="main_tagline"> <em>Animal-Free Clothing & Accessories </em></p>	
+
+		<div class="nav_menu">
+		<% if current_page?(men_path) %>
+		   <%= link_to men_path do %>
+			   <p id="men_selected">MEN</p>
+		   <% end %>
+		  <% else %>
+		  <%= link_to men_path do %>
+			  <p>MEN</p>
+		   <% end %>
+		 <% end %>
+	<% if current_page?(women_path) %>
+		 <%= link_to women_path do %>
+				<p id="men_selected">WOMEN</p>
+		 <% end %>
+		<% else %>
+		 <%= link_to women_path do %>
+				<p>WOMEN</p>
+		 <% end %>
+		<% end %> 			
+		<% if current_page?(about_path) %>
+		 <%= link_to about_path do %>
+			<p id="men_selected">ABOUT</p>
+		 <% end %>
+		 <% else %>
+		 <%= link_to about_path do %>
+			<p>ABOUT</p>
+		 <% end %>
+		<% end %>		 
+		</div>
+	
+	 <div class="mail_container">
+	  <%= render 'layouts/mailchimp' %>
+	</div>
+
+ 	<%= link_to facebook do %>
+ 	<%= image_tag("facebook.jpg", id: "fb_button") %>
+ 	<% end %>
+ 	<%= link_to twitter do %>
+ 	<%= image_tag("twitter.jpg", id: "twitter_button") %>
+ 	<% end %>
+
+ 	<% if current_admin %>
+ 		<div class="admin_controls">
+    <p><%= link_to "New Product", new_product_path %></p>        
+    <p><%= link_to "Log Out", log_out_path %> </p>
+ 		</div>
+ 	<% end %> 
+
+
+	
+	</div>

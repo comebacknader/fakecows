@@ -21,7 +21,7 @@ get '/pinterest-2093b.html', :to => 'pages#pinterest-2093b.html'
 get '/about', :to => 'pages#about'
 get '/vegan', :to => 'pages#vegan'
 get '/faux', :to => 'pages#faux'
-get '/health', :to => 'pages#health'
+get '/blog', :to => 'pages#blog'
 get '/recipes', :to => 'pages#recipes'
 
 

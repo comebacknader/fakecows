@@ -1,7 +1,7 @@
-<%= render 'pages/mainbar' %>
+<div id="container">
+ <%= render 'pages/navbar' %>
 
-<div class="container">
-
+  <div id="home_box">
 	<div class="new_product_box">
 
 	<%= form_for @product, :html => { :multipart => true }  do |f| %>
@@ -41,5 +41,5 @@
 	<% end %>
 
 	</div>
-
+  </div>
 </div>

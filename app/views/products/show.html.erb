@@ -1,10 +1,10 @@
-<%= render 'pages/mainbar' %>
+<div id="container">
+  <%= render 'pages/navbar' %>
 
-<div class="container">
-
+   <div id="home_box">
 	<div class="show_product_box">
 			
-			<%= image_tag(@product.photo(:medium), class:"show_product_image") %>
+			<%= image_tag(@product.photo(:large), class:"show_product_image") %>
 			
 			<div class="show_product_info">
 				<p class="show_product_header"> <%= @product.brand %> </p>
@@ -14,7 +14,7 @@
 
 			<%= link_to @product.link, :target => "_blank" do %>
 				<div class="show_product_link">
-						CHECK IT OUT 
+						BUY at <%= @product.store %> 
 				</div>
 			<% end %>
 			<% if current_admin %>
@@ -24,26 +24,21 @@
 			</div>
 	</div>
 
-  <div id="last_three_all">
-	<% @products.each do |product| %>
-	<%= link_to product do %>
-	<div class="last_three_each_product">
-	 <div classs="last_three_each_product_image">
-		<%= image_tag(product.photo(:small), class: "last_three_each_product_img") %>
-	 </div>
-	<% end %> 
-	 <div class="last_three_each_product_info">
-		<p> <%= product.brand %> <%= product.title %> </p>
+	  <div id="last_three_all">
+		<% @products.each do |product| %>
+		<%= link_to product do %>
+		<div class="last_three_each_product">
+		 <div classs="last_three_each_product_image">
+			<%= image_tag(product.photo(:small), class: "last_three_each_product_img") %>
+		 </div>
+		<% end %> 
+		 <div class="last_three_each_product_info">
+		<p id="each_product_brand"> <%= product.brand.upcase %> <%= truncate(product.title.upcase, length: 40) %> </p>
 		<p> <%= product.price %> </p>
-	 </div>	 	
-	</div>
-	<% end %>
-</div>
-
-	<div class="mail_container">
-	  <%= render 'layouts/mailchimp' %>
-	</div>
-
+		 </div>	 	
+		</div>
+		<% end %>
+	   </div>
 	<%= render 'pages/footer' %>
-
+	</div>
 </div>
